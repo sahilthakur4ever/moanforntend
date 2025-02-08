@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charsetme="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="icon" type="image/x-icon" href="image/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script type="text/javascript" src="components/header.js"></script>
+        <script type="text/javascript" src="components/footer.js"></script>
+        <script type="text/javascript" src="components/modals.js"></script>
+        <script type="text/javascript" src="js/index.js" defer></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    </head>
+    <body>
+
+        <!-- Main Wrapper Start -->
+
+        <!-- For Blur when open modal on responsive  -->
+        <div id="forbackkblur"></div>
+
+        <section class="main_wrapper">
+            <div class="main_container">
+
+            <!-- Header Section Start  -->
+            <header-component></header-component>
+
+            <!-- home_m_head Start  -->
+            <section class="home_m_head">
+                <div class="container">
+                    <img class="animate__animated animate__pulse animate__infinite" src="image/logo.png" />
+                </div>
+            </section>
+            <!-- home_m_head End  -->
+
+            <!-- Home Section Start  -->
+            <section class="home">
+                <div class="container">
+                    <div class="home_m">
+                        <div class="content" onclick=window.location.href='modelprofile.html'>
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="image/home1.png" alt="" />
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">The Ring’s Lord</h3>
+                                <!-- <p class="content-text">This is a short description</p> -->
+                            </div>
+                        </div>
+                        <div class="content" onclick=window.location.href='modelprofile.html'>
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="image/home2.png" alt="" />
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">The Ring’s Lord</h3>
+                                <!-- <p class="content-text">This is a short description</p> -->
+                            </div>
+                        </div>
+                        <div class="content" onclick=window.location.href='modelprofile.html'>
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="image/home3.png" alt="" />
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">The Ring’s Lord</h3>
+
+                                <!-- <p class="content-text">This is a short description</p> -->
+                            </div>
+                        </div>
+                        <!--  <img src="image/home1.png" />
+                            <img src="image/home2.png" />
+                            <img src="image/home3.png" /> -->
+                    </div>
+                </div>
+            </section>
+            <!-- Home Section End  -->
+
+            <!-- recommend_videos Section Start  -->
+            <section class="recommend_videos">
+                <div class="container">
+                    <div class="recommend_videos_m">
+                        <div class="recommend_videos_m_h">
+                            <h2>Recommended Videos</h2>
+                            <button onclick=window.location.href='videos.html'>View More</button>
+                        </div>
+                        <div class="recommend_videos_m_m">
+                            <div class="col-sm-6">
+                                <div class="rcmvideo" onclick=window.location.href='videoplay.html' >
+                                    <span class="rcmvideos1">Fantasy</span>
+                                    <!-- <img src="image/rcmv1.png" /> -->
+                                    <div class="rcmvideoinfo">
+                                        <p>
+                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                        </p>
+                                        <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rcmvideo" onclick=window.location.href='videoplay.html' >
+                                    <span class="rcmvideos1">Fantasy</span>
+                                    <!-- <img src="image/rcmv1.png" /> -->
+                                    <div class="rcmvideoinfo">
+                                        <p>
+                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                        </p>
+                                         <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rcmvideo" onclick=window.location.href='videoplay.html' >
+                                    <span class="rcmvideos1">Fantasy</span>
+                                    <!-- <img src="image/rcmv1.png" /> -->
+                                    <div class="rcmvideoinfo">
+                                        <p>
+                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                        </p>
+                                         <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" onclick=window.location.href='videoplay.html' >
+                                <div class="rcmvideo">
+                                    <span class="rcmvideos1">Fantasy</span>
+                                    <!-- <img src="image/rcmv1.png" /> -->
+                                    <div class="rcmvideoinfo">
+                                        <p>
+                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                        </p>
+                                        <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend_videos_m_m-1">
+                            <div class="rcmvideocard" onclick=window.location.href='videoplay.html' >
+                                <img src="image/rcmv21.png" />
+                                <div class="rcmvideoinfo">
+                                    <p>
+                                        <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                    </p>
+                                     <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                </div>
+                            </div>
+                            <div class="rcmvideocard" onclick=window.location.href='videoplay.html'>
+                                <img src="image/rcmv22.png" />
+                                <div class="rcmvideoinfo">
+                                    <p>
+                                        <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                    </p>
+                                    <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                </div>
+                            </div>
+                            <div class="rcmvideocard" onclick=window.location.href='videoplay.html'>
+                                <img src="image/rcmv23.png" />
+                                <div class="rcmvideoinfo">
+                                    <p>
+                                        <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                    </p>
+                                     <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                </div>
+                            </div>
+                            <div class="rcmvideocard" onclick=window.location.href='videoplay.html'>
+                                <img src="image/rcmv24.png" />
+                                <div class="rcmvideoinfo">
+                                    <p>
+                                        <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                    </p>
+                                     <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                </div>
+                            </div>
+                            <div class="rcmvideocard" onclick=window.location.href='videoplay.html'>
+                                <img src="image/rcmv25.png" />
+                                <div class="rcmvideoinfo">
+                                    <p>
+                                        <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                    </p>
+                                    <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                </div>
+                            </div>
+                            <div class="rcmvideocard" onclick=window.location.href='videoplay.html'>
+                                <img src="image/rcmv26.png" />
+                                <div class="rcmvideoinfo">
+                                    <p>
+                                        <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                    </p>
+                                     <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                </div>
+                            </div>
+                            <div class="rcmvideocard" onclick=window.location.href='videoplay.html'>
+                                <img src="image/rcmv27.png" />
+                                <div class="rcmvideoinfo">
+                                    <p>
+                                        <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                    </p>
+                                    <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                </div>
+                            </div>
+                            <div class="rcmvideocard" onclick=window.location.href='videoplay.html'>
+                                <img src="image/rcmv28.png" />
+                                <div class="rcmvideoinfo">
+                                    <p>
+                                        <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                    </p>
+                                    <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                </div>
+                            </div>
+                            <div class="rcmvideocard" onclick=window.location.href='videoplay.html'>
+                                <img src="image/rcmv29.png" />
+                                <div class="rcmvideoinfo">
+                                    <p>
+                                        <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                    </p>
+                                    <h3> <a href="videoplay.html"> The Ring’s Lord </a></h3>
+                                </div>
+                            </div>
+                            <div class="rcmvideocard" onclick=window.location.href='videoplay.html'>
+                                <img src="image/rcmv30.png" />
+                                <div class="rcmvideoinfo">
+                                    <p>
+                                        <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                    </p>
+                                    <h3>The Ring’s Lord</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- models Section Start  -->
+            <section class="models">
+                <div class="container">
+                    <div class="models_m">
+                        <h2><span class="models_m_span">models</span> <span>models</span> <span class="models_m_span">models</span></h2>
+                        <div class="models_m_wrapper">
+                            <div class="models_m_fullimg content1"  onclick=window.location.href='modelprofile.html'>
+                                 <div class="content-overlay1"></div>
+                                <img class="content-image1"  src="image/models1.png" />
+                                <h4 class="content-details1 fadeIn-right">
+                                    Cyberpunk
+                                    <p>Total videos: 55,655</p>
+                                </h4>
+                                <span class="models_m-1_s">
+                                    PLAY
+                                </span>
+                            </div>
+                            <div class="models_m_two_one content1"  onclick=window.location.href='modelprofile.html'>
+                                <div class="content-overlay1"></div>
+                                <img src="image/models2.png" />
+                                <h4 class="content-details1 fadeIn-right">
+                                    Cyberpunk
+                                    <p>Total videos: 55,655</p>
+                                </h4>
+                            </div>
+                            <div class="models_m_two_one content1"  onclick=window.location.href='modelprofile.html'>
+                                 <div class="content-overlay1"></div>
+                                <img src="image/models3.png" />
+                                <h4 class="content-details1 fadeIn-right">
+                                    Cyberpunk
+                                    <p>Total videos: 55,655</p>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="recommend_videos_m_btn">
+                            <button onclick=window.location.href='models.html'>See All</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- creators Section Start  -->
+            <section class="creators models">
+                <div class="container">
+                    <div class="creators_m">
+                        <h2><span class="models_m_span">creators</span> <span>creators</span> <span class="models_m_span">creators</span></h2>
+                        <div class="creators_m_wrapper">
+                            <div class="creators_profile" onclick=window.location.href='creatorsprofile.html'>
+                                <img src="image/cp1.png" />
+                                <h5><a href="creatorsprofile.html"> Keepitreal</a></h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile" onclick=window.location.href='creatorsprofile.html'>
+                                <img src="image/cp2.png" />
+                                <h5><a href="creatorsprofile.html"> Keepitreal</a></h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile" onclick=window.location.href='creatorsprofile.html'>
+                                <img src="image/cp3.png" />
+                                <h5><a href="creatorsprofile.html"> Keepitreal</a></h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile" onclick=window.location.href='creatorsprofile.html'>
+                                <img src="image/cp2.png" />
+                                <h5><a href="creatorsprofile.html"> Keepitreal</a></h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile" onclick=window.location.href='creatorsprofile.html'>
+                                <img src="image/cp4.png" />
+                                <h5><a href="creatorsprofile.html"> Keepitreal</a></h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile" onclick=window.location.href='creatorsprofile.html'>
+                                <img src="image/cp5.png" />
+                                <h5><a href="creatorsprofile.html"> Keepitreal</a></h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile" onclick=window.location.href='creatorsprofile.html'>
+                                <img src="image/cp6.png" />
+                                <h5><a href="creatorsprofile.html"> Keepitreal</a></h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                        </div>
+                        <div class="recommend_videos_m_btn">
+                            <button type="button" onclick=window.location.href="allcreators.html">See All</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Start  -->
+            <footer-component></footer-component>
+            <!-- Footer End  -->
+
+            </div>
+
+            <modal-component></modal-component>
+
+        </section>
+
+        <!-- Main Wrapper End -->
+    </body>
+</html>

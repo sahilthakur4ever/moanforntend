@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charsetme="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>Videos Page</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="icon" type="image/x-icon" href="image/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+        <script type="text/javascript" src="components/header.js"></script>
+        <script type="text/javascript" src="components/footer.js"></script>
+        <script type="text/javascript" src="components/modals.js"></script>
+        <script type="text/javascript" src="js/index.js" defer></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>        
+    </head>
+    <body>
+
+        <!-- Main Wrapper Start -->
+
+        <div id="forbackkblur"></div>
+
+        <section class="main_wrapper">
+            <div class="main_container">
+
+            <!-- Header Section Start  -->
+            <header-component></header-component>
+
+
+            <!-- category_results Section Start  -->
+            <section class="show_results">
+                <div class="container">
+                    <h2>Top Rated Videos
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filters<i class="fa-solid fa-sliders"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><h6> Alphabetical</h6></li>
+                        <li> <label> <input type="checkbox" name=""> A-Z </label> </li>
+                        <li><h6>Duration</h6></li>
+                        <li><div id="time-range">
+                            <p>Time Range: <span class="slider-time">09:00</span> - <span class="slider-time2">17:00</span>
+
+                            </p>
+                            <div class="sliders_step1">
+                                <div id="slider-range"></div>
+                            </div>
+                        </div>  </li>
+                        <li> <button>Apply Now</button> </li>
+                      </ul>
+                    </div>
+                    </h2>
+                    <div class="show_results_m">
+                            <div class="col-sm-2">
+                                <div class="show_results_sidelinks">
+                                    <h4>Videos</h4>
+                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Recommend</button>
+                                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Top rated (25)</button>
+                                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Sexy (25)</button>
+                                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="Hottest" role="tab" aria-controls="v-pills-settings" aria-selected="false">Hottest (25)</button>
+                                    </div>
+                                    <h4>Category</h4>
+                                    <div class="outernavv">
+                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false">Ceiling (25)</button>
+                                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">School (25)</button>
+                                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Sexy (25)</button>
+                                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="Hottest" role="tab" aria-controls="v-pills-settings" aria-selected="false">Modern (25)</button>
+                                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Retro (25)</button>
+                                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Clean (25)</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="show_results_side_content">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                            <div class="result_video_card">
+                                                <div class="rcmvideocard">
+                                                    <a href="videoplay.html"> 
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>Interspace</h3>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>Her & HIm</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>Lo Lo Land</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>Her & HIm</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="rcmvideocard">
+                                                    <img src="image/rcmv21.png" />
+                                                    <div class="rcmvideoinfo">
+                                                        <p>
+                                                            <span><i class="fa-regular fa-clock"></i>1hr 24mins</span> <span><i class="fa-regular fa-eye"></i>21.3K views</span>
+                                                        </p>
+                                                        <h3>The Ring’s Lord</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">..sddfsfsddfsdfsdfsdfsdfssdfdfsfsdfsdfsdfsdfsd.</div>
+                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">..dfsfdfdfdsfsddfsdfsffdssdffdssdfdfsdfsfdsfdsfdfsdfsdfsdsdfdfsdfsfsddfsfdfddffdfddffdsfsdfds.</div>
+                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="recommend_videos_m_btn">
+                            <button>Loading...</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- creators Section Start  -->
+            <section class="creators models">
+                <div class="container">
+                    <div class="creators_m">
+                        <h2><span class="models_m_span">creators</span> <span>creators</span> <span class="models_m_span">creators</span></h2>
+                        <div class="creators_m_wrapper">
+                            <div class="creators_profile">
+                                <img src="image/cp1.png" />
+                                <h5>Keepitreal</h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile">
+                                <img src="image/cp2.png" />
+                                <h5>Keepitreal</h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile">
+                                <img src="image/cp3.png" />
+                                <h5>Keepitreal</h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile">
+                                <img src="image/cp2.png" />
+                                <h5>Keepitreal</h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile">
+                                <img src="image/cp4.png" />
+                                <h5>Keepitreal</h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile">
+                                <img src="image/cp5.png" />
+                                <h5>Keepitreal</h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                            <div class="creators_profile">
+                                <img src="image/cp6.png" />
+                                <h5>Keepitreal</h5>
+                                <p>Total Videos:<span>45,867</span></p>
+                            </div>
+                        </div>
+                        <div class="recommend_videos_m_btn">
+                            <button type="button" onclick=window.location.href='allcreators.html'>See All</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Start  -->
+            <footer-component></footer-component>
+            <!-- Footer End  -->
+
+            </div>
+            
+            <modal-component></modal-component>
+
+        </section>
+
+        <!-- Main Wrapper End -->
+    </body>
+</html>

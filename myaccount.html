@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charsetme="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>Account Page</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="icon" type="image/x-icon" href="image/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+        <script type="text/javascript" src="components/headerprofile.js"></script>
+        <script type="text/javascript" src="components/footer.js"></script>
+        <script type="text/javascript" src="components/modals.js"></script>
+        <script type="text/javascript" src="js/index.js" defer></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    </head>
+    <body>
+
+        <!-- Main Wrapper Start -->
+
+        <div id="forbackkblur"></div>
+
+        <section class="main_wrapper">
+            <div class="main_container">
+
+            <!-- Header Section Start  -->
+            <headerprofile-component></headerprofile-component>
+
+            <!-- My Account Section Start  -->
+
+            <section class="my_account_user">
+                <div class="container-fluid">
+                    <div class="my_account_user_m">
+                        <div class="col-sm-3 my_account_user_m-col-3">
+                           <button class="my_account_back_btn" onclick=window.location.href='index.html'><i class="fa-solid fa-angle-left"></i>Back</button>
+                            <div class="my_account_user_m_l my_account_user_m_l_resp">
+                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">
+                                       <span><i class="fa-regular fa-user"></i></span> <p> my Profile</p>
+                                    </button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                        <span><i class="fa-regular fa-message-lines"></i></span><p>Messages</p>
+                                    </button>
+                                    <button class="nav-link" id="v-pills-subscription-tab" data-bs-toggle="pill" data-bs-target="#v-pills-subscription" type="button" role="tab" aria-controls="v-pills-subscription" aria-selected="false">
+                                        <span><i class="fa-regular fa-tag"></i></span><p>Subscription</p>
+                                    </button>
+                                    <button class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-payment" type="button" role="tab" aria-controls="v-pills-payment" aria-selected="false">
+                                        <span><i class="fa-regular fa-credit-card"></i></span><p>Payments</p>
+                                    </button>
+                                    <button class="nav-link" id="v-pills-subscriber-tab" data-bs-toggle="pill" data-bs-target="#v-pills-subscriber" type="button" role="tab" aria-controls="v-pills-subscriber" aria-selected="false">
+                                        <span><i class="fa-regular fa-users"></i></span><p>Following</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 my_account_user_m-col-9">
+                            <div class="my_account_user_m_r">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <div class="my_account_profile">
+                                            <div class="my_account_profile_m">
+                                                <form>
+                                                    <h4>My Profile</h4>
+                                                    <div class="pro-inpt">
+                                                        <div class="col-sm-6">
+                                                            <input type="text" placeholder="First Name*" />
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" placeholder="Last Name*" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="pro-inpt">
+                                                        <div class="col-sm-6">
+                                                            <input type="date" placeholder="Birthday" />
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <select>
+                                                                <option selected>Gender</option>
+                                                                <option>Male</option>
+                                                                <option>Female</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pro-inpt">
+                                                        <div class="col-sm-6">
+                                                            <input id="phone" type="tel" />
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <input type="email" placeholder="Email Id" />
+                                                        </div>
+                                                    </div>
+                                                    <textarea placeholder="Tell us something about yourself" rows="5"></textarea>
+                                                    <button type="submit">Submit</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-subscription" role="tabpanel" aria-labelledby="v-pills-subscription-tab">
+                                        <div class="my_account_subscription">
+                                            <h4>SUBSCRIPTIONS 
+                                                <!-- <i class="fa-solid fa-sliders"></i> -->
+                                            </h4>
+                                            <div class="my_account_subscription_m">
+                                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                  <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">52 All</button>
+                                                  </li>
+                                                  <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">0 Active</button>
+                                                  </li>
+                                                  <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">0 Expired</button>
+                                                  </li>
+                                                </ul>
+                                                <div class="tab-content" id="pills-tabContent">
+                                                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                      
+                                                  </div>
+                                                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                                                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                        <div class="my_account_message">
+                                            <h4>Messages</h4>
+                                            <div class="my_account_message_m">
+                                                <div class="col-sm-3">
+                                                    <div class="my_account_message_m_l">
+                                                        <h3>Chats <i class="fa-regular fa-magnifying-glass"></i></h3>
+                                                        <div class="my_account_message_chat_profile">
+                                                            <div class="col-sm-2">
+                                                                <img src="image/chat.png" />
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <h6>Nickolas <span>10:12 am</span></h6>
+                                                                <p>Lorem ipsum dolor sit amet..</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="my_account_message_chat_profile">
+                                                            <div class="col-sm-2">
+                                                                <img src="image/chat.png" />
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <h6>Nickolas <span>10:12 am</span></h6>
+                                                                <p>Lorem ipsum dolor sit amet..</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="my_account_message_chat_profile">
+                                                            <div class="col-sm-2">
+                                                                <img src="image/chat.png" />
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <h6>Nickolas <span>10:12 am</span></h6>
+                                                                <p>Lorem ipsum dolor sit amet..</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="my_account_message_chat_profile">
+                                                            <div class="col-sm-2">
+                                                                <img src="image/chat.png" />
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <h6>Nickolas <span>10:12 am</span></h6>
+                                                                <p>Lorem ipsum dolor sit amet..</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="my_account_message_chat_profile">
+                                                            <div class="col-sm-2">
+                                                                <img src="image/chat.png" />
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <h6>Nickolas <span>10:12 am</span></h6>
+                                                                <p>Lorem ipsum dolor sit amet..</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="my_account_message_chat_profile">
+                                                            <div class="col-sm-2">
+                                                                <img src="image/chat.png" />
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <h6>Nickolas <span>10:12 am</span></h6>
+                                                                <p>Lorem ipsum dolor sit amet..</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="my_account_message_chat_profile">
+                                                            <div class="col-sm-2">
+                                                                <img src="image/chat.png" />
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <h6>Nickolas <span>10:12 am</span></h6>
+                                                                <p>Lorem ipsum dolor sit amet..</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="my_account_message_chat_profile">
+                                                            <div class="col-sm-2">
+                                                                <img src="image/chat.png" />
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                <h6>Nickolas <span>10:12 am</span></h6>
+                                                                <p>Lorem ipsum dolor sit amet..</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <div class="my_account_message_m_r">
+                                                        <div class="my_account_message_head">
+                                                            <h2><img src="image/chat.png" />Nickolas</h2>
+                                                            <i class="fa-regular fa-magnifying-glass"></i>
+                                                        </div>
+                                                        <div class="my_account_message_chat_m">
+                                                            <div class="chat-history">
+                                                                <ul>
+                                                                    <li class="clearfix">
+                                                                        <span class="mm2">14:24</span>
+
+                                                                        <div class="message other-message float-right">
+                                                                            Lorem ipsum dolor sit ame adipiscing elit sed do eiusmod tempor incididunt
+                                                                        </div>
+                                                                        <i class="fa-sharp fa-solid fa-caret-right"></i>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <div class="message my-message">
+                                                                            Lorem ipsum dolor sit ame adipiscing elit sed do eiusmod tempor incididunt
+                                                                        </div>
+                                                                        <span class="mm1">14:24</span>
+                                                                        <i class="fa-sharp fa-solid fa-caret-left"></i>
+                                                                    </li>
+                                                                    <li class="clearfix">
+                                                                        <span class="mm2">14:24</span>
+                                                                        <div class="message other-message float-right">
+                                                                            Lorem ipsum dolor sit ame adipiscing elit sed do eiusmod tempor incididunt
+                                                                        </div>
+                                                                        <i class="fa-sharp fa-solid fa-caret-right"></i>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="message my-message">
+                                                                            Lorem sit elit sed do eiusmod tempor incididunt
+                                                                        </div>
+                                                                        <span class="mm1">14:24</span>
+                                                                        <i class="fa-sharp fa-solid fa-caret-left"></i>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="message my-message">
+                                                                            Lorem ipsum dolor sit amet
+                                                                        </div>
+                                                                        <span class="mm1">14:24</span>
+                                                                        <i class="fa-sharp fa-solid fa-caret-left"></i>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="message-chat-message">
+                                                                    <input type="text" placeholder="Type Something" />
+                                                                    <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-payment" role="tabpanel" aria-labelledby="v-pills-payment-tab">
+                                        <div class="my_account_payment">
+                                            <form>
+                                                <h4>Saved Cards</h4>
+                                                <h6><button type="button" onclick='showcarddiv()'>+ Add New Card</button></h6>
+                                                <div  class="my_account_payment_card">
+                                                    <label>
+                                                        <span class="my_account_payment_card_1">
+                                                    <input type="radio" name="aaa1" id="aaa11"></span>
+                                                    <span class="my_account_payment_card_2">
+                                                    <span class="mcp1"><img src="image/mastercard.png" /></span>
+                                                    <p>Mastercard ending 2564<span class="account_paymennt_default">(Default)</span> </p>
+                                                    <span class="mcp2">
+                                                        <button>Delete <i class="fa-solid fa-xmark"></i></button>
+                                                    </span>
+                                                    </span>
+                                                    </label>
+                                                </div>
+                                                <div class="my_account_payment_card">
+                                                    <label>
+                                                        <span class="my_account_payment_card_1">
+                                                    <input type="radio" name="aaa1" id="aaa11"></span>
+                                                    <span class="my_account_payment_card_2">
+                                                    <span class="mcp1"><img src="image/visa.png" /></span>
+                                                    <p>Visa ending 2564</p>
+                                                    <span class="mcp2">
+                                                        <button>Delete <i class="fa-solid fa-xmark"></i></button>
+                                                    </span>
+                                                    </span>
+                                                    </label>
+                                                </div>
+
+                                                <div id="my_account_payment_add_card" class="my_account_payment_add_card">
+                                                    <h4>add New card</h4>
+                                                    <div class="col-sm-12"><input type="text" placeholder="Card Number" /></div>
+                                                    <div class="col-sm-12"><input type="text" placeholder="Cardholder Name" /></div>
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-6"><input type="text" placeholder="Expiry Month" /></div>
+                                                        <div class="col-sm-6"><input type="text" placeholder="Expiry Year" /></div>
+                                                    </div>
+                                                    <div class="col-sm-12"><input type="text" placeholder="CVV Number" /></div>
+                                                    <button type="submit">Add</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-subscriber" role="tabpanel" aria-labelledby="v-pills-subscriber-tab">
+                                        <div class="my_account_payment">
+                                            <form>
+                                                <h4>Subscribers</h4>
+                                                <div class="my_account_payment_card my_account_subscriber_card">
+                                                    <label>
+                                                        <span class="my_account_payment_card_2 my_account_subscriber_card_2">
+                                                            <span class="mcp1"><img src="image/cp1.png" /></span>
+                                                            <h5>Hanrey Daniel</h5>
+                                                            <span class="mcp2">
+                                                                <button type="button" class="creator_unsubscribe">Unsubscribe</button>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="my_account_payment_card my_account_subscriber_card">
+                                                    <label>
+                                                        <span class="my_account_payment_card_2 my_account_subscriber_card_2">
+                                                            <span class="mcp1"><img src="image/cp1.png" /></span>
+                                                            <h5>Hanrey Daniel</h5>
+                                                            <span class="mcp2">
+                                                                <button type="button" class="creator_unsubscribe">Unsubscribe</button>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="my_account_payment_card my_account_subscriber_card">
+                                                    <label>
+                                                        <span class="my_account_payment_card_2 my_account_subscriber_card_2">
+                                                            <span class="mcp1"><img src="image/cp1.png" /></span>
+                                                            <h5>Hanrey Daniel</h5>
+                                                            <span class="mcp2">
+                                                                <button type="button" class="creator_unsubscribe">Unsubscribe</button>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="my_account_payment_card my_account_subscriber_card">
+                                                    <label>
+                                                        <span class="my_account_payment_card_2 my_account_subscriber_card_2">
+                                                            <span class="mcp1"><img src="image/cp1.png" /></span>
+                                                            <h5>Hanrey Daniel</h5>
+                                                            <span class="mcp2">
+                                                                <button type="button" class="creator_unsubscribe">Unsubscribe</button>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="my_account_payment_card my_account_subscriber_card">
+                                                    <label>
+                                                        <span class="my_account_payment_card_2 my_account_subscriber_card_2">
+                                                            <span class="mcp1"><img src="image/cp1.png" /></span>
+                                                            <h5>Hanrey Daniel</h5>
+                                                            <span class="mcp2">
+                                                                <button type="button" class="creator_unsubscribe">Unsubscribe</button>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="my_account_payment_card my_account_subscriber_card">
+                                                    <label>
+                                                        <span class="my_account_payment_card_2 my_account_subscriber_card_2">
+                                                            <span class="mcp1"><img src="image/cp1.png" /></span>
+                                                            <h5>Hanrey Daniel</h5>
+                                                            <span class="mcp2">
+                                                                <button type="button" class="creator_unsubscribe">Unsubscribe</button>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- My Account Section End  -->
+
+            <!-- Footer Start  -->
+            <footer-component></footer-component>
+            <!-- Footer End  -->
+
+            </div>
+            
+            <modal-component></modal-component>
+
+        </section>
+
+        <!-- Main Wrapper End -->
+    </body>
+  <script>
+   const phoneInputField = document.querySelector("#phone");
+   const phoneInput = window.intlTelInput(phoneInputField, {
+     utilsScript:
+       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+ </script>
+</html>
