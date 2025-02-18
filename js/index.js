@@ -337,3 +337,27 @@ prevBtns.forEach(btn => {
 })
 
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const token = localStorage.getItem("userToken");
+
+  // Disable all anchor links without token
+  document.querySelectorAll("a").forEach(link => {
+      if (!token) {
+          link.addEventListener("click", function (event) {
+              event.preventDefault();
+              alert("You must be logged in to access this page.");
+          });
+      }
+  });
+
+  // Disable all elements with onclick redirections
+  document.querySelectorAll("[onclick]").forEach(element => {
+      if (!token) {
+          element.onclick = function (event) {
+              event.preventDefault();
+              alert("You must be logged in to access this page.");
+          };
+      }
+  });
+});

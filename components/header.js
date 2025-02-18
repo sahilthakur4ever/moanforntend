@@ -1,10 +1,10 @@
 class Header extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    this.innerHTML = `<!-- Header Ads Start -->
+    connectedCallback() {
+        this.innerHTML = `<!-- Header Ads Start -->
             <section class="header_adss">
                 <div class="container-fluid">
                     <div class="header_adss_m">
@@ -191,6 +191,7 @@ class Header extends HTMLElement {
                                   <ul class="dropdown-menu" aria-labelledby="profiledropdown">
                                     <li><a class="dropdown-item" href="myaccount.html"><i class="fa-regular fa-user"></i>My Account</a></li>
                                     <li><a class="dropdown-item" href="notification.html"><i class="fa-regular fa-bell"></i>Notifications</a></li>
+                                    <li><a class="dropdown-item" href="changepassword.html"><i class="fa-regular fa-user"></i>Change password</a></li>
                                     <li><a class="dropdown-item" href="#"><i class="fa-regular fa-file-lock"></i>Privacy Policy</a></li>
                                     <li><a class="dropdown-item" href="#"><i class="fa-light fa-file"></i>Terms & Conditions</a></li>
                                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headset"></i>Help & Support</a></li>
@@ -205,7 +206,7 @@ class Header extends HTMLElement {
                 </div>
             </section>
             <!-- Header End -->`;
-  }
+    }
 }
 
 customElements.define('header-component', Header);
